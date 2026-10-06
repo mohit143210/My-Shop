@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Delivery Address</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="images/myshop lodo.png" alt="MyShop Logo">
+        </div>
+
+        <div class="cart">
+            🛒 Cart
+        </div>
+
+    </header>
+
+
+    <!-- Delivery Address -->
+    <main class="address-page">
+
+        <h1>Delivery Address</h1>
+
+        <form onsubmit="continueToOrder(event)">
+
+            <div class="address-form-row">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="mobile"
+                    placeholder="Mobile Number"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="address"
+                    placeholder="Full Address"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="City"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="state"
+                    placeholder="State"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="pincode"
+                    placeholder="PIN Code"
+                    required
+                >
+
+                <button type="submit">
+                    Continue to Order
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

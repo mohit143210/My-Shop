@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e3e6e6;
+}
+
+/* Navbar */
+.navbar {
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    height: 40px;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search button {
+    width: 50px;
+    border: none;
+    background-color: #febd69;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.account {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.account b {
+    font-size: 15px;
+}
+
+.cart {
+    font-size: 17px;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Menu */
+.menu {
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.menu span {
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    height: 280px;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background-color: #ff9900;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Products */
+.products {
+    padding: 30px;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    width: 500px;
+    min-height: 500px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.product-image {
+    height: 500px;
+    width: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.product-image {
+    height: 500px;
+    width: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.product-image {
+    height: 500px;
+    width: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product button {
+    background-color: #ffd814;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Login Page */
+
+.login-box {
+    width: 350px;
+    margin: 70px auto;
+    background: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.login-box h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd814;
+    cursor: pointer;
+}
+
+.login-box p {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.create-btn {
+    background-color: #e7e9ec !important;
+}
+
+/* All Menu Dropdown */
+
+.all-menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 220px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.all-menu p {
+    padding: 12px;
+    color: #111;
+    cursor: pointer;
+    margin: 0;
+}
+
+.all-menu p:hover {
+    background-color: #eee;
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo img {
+    width: 100px;
+    height: 68px;
+    object-fit: contain;
+}
+
+/* Order Summary Page */
+
+.order-page {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.order-page > h1 {
+    margin-bottom: 25px;
+}
+
+.order-box {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.order-box h2 {
+    margin-bottom: 20px;
+}
+
+.order-product {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.order-product img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.order-product h2 {
+    margin-bottom: 10px;
+}
+
+.order-product p {
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+#order-address p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.total-box {
+    text-align: right;
+}
+
+.total-box h2 {
+    margin-bottom: 20px;
+}
+
+.total-box button {
+    background-color: #ffd814;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.total-box button:hover {
+    background-color: #f7ca00;
+}
+
+/* Admin Dashboard */
+
+.admin-page {
+    width: 95%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.admin-page h1 {
+    margin-bottom: 25px;
+}
+
+.admin-cards {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.admin-card {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.admin-card h3 {
+    margin-bottom: 15px;
+}
+
+.admin-card p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Profit Dashboard */
+
+.profit-section {
+    margin-top: 30px;
+}
+
+.profit-section h2 {
+    margin-bottom: 20px;
+}
+
+.profit-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.profit-card {
+    flex: 1;
+    background: #f5f5f5;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+.profit-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.profit-card h3 {
+    margin-bottom: 10px;
+}
+
+.profit-card p {
+    margin-bottom: 15px;
+}
+
+.profit-card strong {
+    font-size: 25px;
+}
+
+.profit-card.active {
+    border: 3px solid #ff9900;
+    transform: scale(1.03);
+}

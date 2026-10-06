@@ -1,0 +1,258 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyShop - Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Admin Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="images/myshop lodo.png" alt="MyShop Logo">
+        </div>
+
+        <h2>🔧 Admin Dashboard</h2>
+
+        <button onclick="goHome()">🏠 MyShop</button>
+
+    </header>
+
+
+    <main class="admin-page">
+
+        <h1>🔧 Admin Dashboard</h1>
+
+
+        <!-- Dashboard Cards -->
+
+        <div class="admin-cards">
+
+            <div class="admin-card">
+                <h3>📦 Total Orders</h3>
+                <p id="total-orders">0</p>
+            </div>
+
+            <div class="admin-card">
+                <h3>🛍️ Products</h3>
+                <p id="total-products">7</p>
+            </div>
+
+            <div class="admin-card">
+                <h3>👥 Customers</h3>
+                <p id="total-customers">0</p>
+            </div>
+
+            <div class="admin-card">
+                <h3>💰 Total Sales</h3>
+                <p id="total-sales">₹0</p>
+            </div>
+
+        </div>
+
+
+        <!-- Profit Status -->
+
+        <div class="profit-section">
+
+            <h2>📊 Today's Profit</h2>
+
+            <div class="profit-cards">
+
+                <div class="profit-card" id="low-profit">
+                    <div class="profit-icon">📊</div>
+                    <h3>LOW PROFIT</h3>
+                    <p>₹0 – ₹999</p>
+                    <strong id="low-profit-value">₹0</strong>
+                </div>
+
+                <div class="profit-card" id="medium-profit">
+                    <div class="profit-icon">📊</div>
+                    <h3>MEDIUM PROFIT</h3>
+                    <p>₹1,000 – ₹4,999</p>
+                    <strong id="medium-profit-value">₹0</strong>
+                </div>
+
+                <div class="profit-card" id="high-profit">
+                    <div class="profit-icon">📊</div>
+                    <h3>HIGH PROFIT</h3>
+                    <p>₹5,000+</p>
+                    <strong id="high-profit-value">₹0</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Orders -->
+
+        <section class="admin-section">
+
+            <h2>📦 Orders Management</h2>
+
+            <div id="admin-orders">
+                <p>No orders available.</p>
+            </div>
+
+        </section>
+
+
+        <!-- ADD PRODUCT -->
+
+        <section class="admin-section">
+
+            <div class="add-product-box">
+
+                <h2>➕ Add New Product</h2>
+
+                <input
+                    type="text"
+                    id="product-name"
+                    placeholder="Product Name">
+
+                <input
+                    type="number"
+                    id="product-price"
+                    placeholder="Product Price">
+
+                <input
+                    type="number"
+                    id="product-stock"
+                    placeholder="Stock Quantity">
+
+                <!-- NEW IMAGE INPUT -->
+
+                <input
+                    type="file"
+                    id="product-image"
+                    accept="image/*">
+
+                <button onclick="addProduct()">
+                    ➕ Add Product
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCTS -->
+
+        <section class="admin-section">
+
+            <h2>🛍️ Product Management</h2>
+
+            <div class="admin-products">
+
+                <div class="admin-product">
+                    <h3>📱 Smartphone</h3>
+                    <p>₹1,18,999</p>
+
+                    <button onclick="adminRemoveProduct(this)">
+                        🗑️ Remove
+                    </button>
+                </div>
+
+
+                <div class="admin-product">
+                    <h3>🎧 Headphone</h3>
+                    <p>₹2,999</p>
+
+                    <button onclick="adminRemoveProduct(this)">
+                        🗑️ Remove
+                    </button>
+                </div>
+
+
+                <div class="admin-product">
+                    <h3>💻 Laptop</h3>
+                    <p>₹49,999</p>
+
+                    <button onclick="adminRemoveProduct(this)">
+                        🗑️ Remove
+                    </button>
+                </div>
+
+
+                <div class="admin-product">
+                    <h3>👗 Model Dress</h3>
+                    <p>₹1,999</p>
+
+                    <button onclick="adminRemoveProduct(this)">
+                        🗑️ Remove
+                    </button>
+                </div>
+
+
+                <div class="admin-product">
+                    <h3>👕 Faisan Dress</h3>
+                    <p>₹1,999</p>
+
+                    <button onclick="adminRemoveProduct(this)">
+                        🗑️ Remove
+                    </button>
+                </div>
+
+
+                <div class="admin-product">
+                    <h3>⌚ Smart Watch</h3>
+                    <p>₹2,999</p>
+
+                    <button onclick="adminRemoveProduct(this)">
+                        🗑️ Remove
+                    </button>
+                </div>
+
+
+                <div class="admin-product">
+                    <h3>📚 Python Book</h3>
+                    <p>₹999</p>
+
+                    <button onclick="adminRemoveProduct(this)">
+                        🗑️ Remove
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Admin Actions -->
+
+        <section class="admin-section">
+
+            <h2>⚙️ Admin Actions</h2>
+
+            <button class="admin-action" onclick="adminLogout()">
+                🔐 Admin Logout
+            </button>
+
+            <button class="admin-action" onclick="clearOrders()">
+                🗑️ Clear All Orders
+            </button>
+
+            <button class="admin-action" onclick="goHome()">
+                🏠 Back to MyShop
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```

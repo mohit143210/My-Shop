@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyShop - Order Summary</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="images/myshop lodo.png" alt="MyShop Logo">
+        </div>
+
+        <div class="cart">
+            🛒 Cart
+        </div>
+
+    </header>
+
+
+    <!-- Order Summary -->
+    <main class="order-page">
+
+        <h1>Order Summary</h1>
+
+
+        <!-- Product -->
+        <section class="order-box">
+
+            <h2>Product Details</h2>
+
+            <div id="order-product"></div>
+
+        </section>
+
+
+        <!-- Delivery Address -->
+<section class="order-box">
+
+    <h2>Delivery Address</h2>
+
+    <div id="order-address"></div>
+
+    <button onclick="removeOrder()" class="remove-order-btn">
+        Remove Order
+    </button>
+
+</section>
+
+
+        <!-- Total -->
+        <section class="order-box total-box">
+
+            <h2 id="order-total">
+                Total: ₹0
+            </h2>
+
+           <h3>Payment Method</h3>
+
+<label>
+    <input type="radio" name="payment" value="cod" checked>
+    Cash on Delivery
+</label>
+
+<br><br>
+
+<label>
+    <input type="radio" name="payment" value="online">
+    Online Payment
+</label>
+
+<br><br>
+
+<button onclick="placeOrder()">
+    Place Order
+</button>
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+    <img src="images/myshop lodo.png" alt="MyShop Logo">
+</div>
+        <div class="search">
+            <input type="text" placeholder="Search products">
+            <button>🔍</button>
+        </div>
+
+        <div class="account" onclick="goToLogin()">
+            Hello, Sign in
+            <br>
+            <b>Account & Lists</b>
+        </div>
+        
+        <div class="cart" onclick="showCart()">
+    🛒 Cart
+</div>
+
+    </header>
+
+    <!-- Menu -->
+    <nav class="menu">
+        <span onclick="toggleMenu()">☰ All</span>
+        <span onclick="showDeals()">Today's Deals</span>
+        <span onclick="customerService()">Customer Service</span>
+        <span onclick="showCategory('Electronics')">Electronics</span>
+        <span onclick="showCategory('Fashion')">Fashion</span>
+        <span onclick="showCategory('Books')">Books</span>
+        <span onclick="showOrders()">📦 My Orders</span>
+    </nav>
+
+    <div id="allMenu" class="all-menu">
+    <p onclick="showCategory('Electronics')">📱 Electronics</p>
+    <p onclick="showCategory('Fashion')">👕 Fashion</p>
+    <p onclick="showCategory('Books')">📚 Books</p>
+    <p onclick="showCategory('Laptops')">💻 Laptops</p>
+    <p onclick="showCategory('Headphones')">🎧 Headphones</p>
+    <p onclick="showCategory('Smart Watch')">⌚ Smart Watch</p>
+</div>
+
+    <!-- Main -->
+    <main>
+
+        <section class="hero">
+            <h1>Welcome to MyShop</h1>
+            <p>Best products at amazing prices</p>
+            <button>Shop Now</button>
+        </section>
+
+        <div class="product-banner">
+   
+</div>
+
+        <section class="products">
+
+            <h2>Popular Products</h2>
+
+            <div class="product-container">
+
+                <div class="product" data-category="Electronics" data-deal="10">
+    <div class="product-image">
+        <img src="images/Galaxy s26 Ultra.webp" alt="Galaxy S26 Ultra">
+    </div>
+                    <h3>Smartphone</h3>
+                    <p>₹1,18,999</p>
+                    <button>Add to Cart</button>
+                    <button onclick="buyNow(this)">Buy Now</button>
+                </div>
+
+                <div class="product" data-category="Headphones" data-deal="15">
+                    <div class="product-image">
+                    <img src="images/head.jpg" alt="Headphone">           
+            </div>
+                    <h3>Headphone</h3>
+                    <p>₹2,999</p>
+                    <button>Add to Cart</button>
+                    <button onclick="buyNow(this)">Buy Now</button>
+                </div>
+
+                <div class="product" data-category="Electronics" data-deal="15">
+                    <div class="product-image">
+                    <img src="images/laptop.jpg" alt="laptop ">           
+            </div>
+                    <h3>Laptop</h3>
+                    <p>₹49,999</p>
+                    <button>Add to Cart</button>
+                    <button onclick="buyNow(this)">Buy Now</button>
+                </div>
+                
+                    <div class="product" data-category="Fashion" data-deal="5">
+                    <div class="product-image">
+                    <img src="images/model dress.jpg" alt="Model Dress">           
+            </div>
+                    <h3>Model Dress</h3>
+                    <p>₹1,999</p>
+                    <button>Add to Cart</button>
+                    <button onclick="buyNow(this)">Buy Now</button>
+                </div>
+
+                <div class="product" data-category="Fashion" data-deal="10">
+                    <div class="product-image">
+                    <img src="images/faisan.jpg" alt="faisan dress">   
+            </div>
+                    <h3>faisan dress</h3>
+                    <p>₹1,999</p>
+                    <button>Add to Cart</button>
+                    <button onclick="buyNow(this)">Buy Now</button>
+                </div>
+
+                <div class="product" data-category="Smart Watch" data-deal="10">
+                    <div class="product-image">
+                    <img src="images/smartwatch.jpg" alt="Smart Watch">
+            </div>        
+                    <h3>Smart Watch</h3>
+                    <p>₹2,999</p>
+                    <button>Add to Cart</button>
+                    <button onclick="buyNow(this)">Buy Now</button>
+                </div>
+
+                <div class="product" data-category="Books">
+                    <div class="product-image">
+                    <img src="images/book.png" alt="Python Book">
+            </div>        
+                    <h3>Python book</h3>
+                    <p>₹999</p>
+                    <button>Add to Cart</button>
+                    <button onclick="buyNow(this)">Buy Now</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
